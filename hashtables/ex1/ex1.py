@@ -13,8 +13,14 @@ def get_indices_of_item_weights(weights, length, limit):
     YOUR CODE HERE
     """
 
-    return None
+    for idx, val in enumerate(weights):
+        diff = limit - val
+        diff_idx = hash_table_retrieve(ht, diff)
 
+        if diff_idx is not None:
+            return (idx, diff_idx)
+
+        hash_table_insert(ht, val, idx)
 
 def print_answer(answer):
     if answer is not None:
