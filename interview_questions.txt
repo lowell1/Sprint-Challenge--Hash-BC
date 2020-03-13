@@ -18,4 +18,4 @@ Explain how proof of work functions. How does it operate. How does this protect 
 
 the proof of work function searches for a proof or nonce.
 
-then it appends the hash of the last block to the proof. if the resulting number is less than a certain number, then the proof is considered valid, otherwise it tries the next number
+then it appends the hash of the last block to the proof. if the resulting hash satisfies some condition, then the proof is considered valid, otherwise it tries the next number
