@@ -1,0 +1,21 @@
+* What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+
+add or remove from the front is O(n)
+add or remove from the back is O(1)
+
+
+* What is the worse case scenario if you try to extend the storage size of a dynamic array?
+
+O(n)
+
+Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+
+a block is an object that contains its index in the blockchain, a timestamp, a list of transactions, proof, and the hash of the last block
+
+the chain is all of the blocks
+ 
+Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+
+the proof of work function searches for a proof or nonce.
+
+then it appends the hash of the last block to the proof. if the resulting number is less than a certain number, then the proof is considered valid, otherwise it tries the next number
